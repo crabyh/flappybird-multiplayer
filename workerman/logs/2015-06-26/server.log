@@ -1,0 +1,125 @@
+2015-06-26 00:37:47 Server:Workerman is starting ...
+2015-06-26 00:37:47 Server:[1A
+[KWorkerman start success ...[0m
+2015-06-26 00:45:01 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:46:46 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:48:25 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:49:35 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:52:44 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:53:01 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:53:33 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:53:42 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:54:00 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:54:02 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:55:09 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:55:24 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:56:09 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 00:56:52 Worker[FileMonitor]:terminal closed and reset workers fd
+2015-06-26 21:23:57 Server:Workerman is starting ...
+2015-06-26 21:23:57 Server:[1A
+[KWorkerman start success ...[0m
+2015-06-26 21:23:57 Worker[Gateway]:WORKER EXIT UNEXPECTED  E_ERROR Uncaught exception 'Exception' with message 'cant not mkdir(/tmp/workerman-flappy-bird/)' in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php:35
+Stack trace:
+#0 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/Store.php(47): Lib\StoreDriver\File->__construct('gateway')
+#1 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/Gateway.php(272): Lib\Store::instance('gateway')
+#2 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/Gateway.php(190): Gateway->registerAddress('127.0.0.1:30014')
+#3 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(446): Gateway->start()
+#4 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(360): Man\Core\Master::createOneWorker('Gateway')
+#5 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(176): Man\Core\Master::spawnWorkers()
+#6 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/bin/workermand(103): Man\Core\Maste in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php on line 35 ip:
+2015-06-26 21:23:57 Worker[BusinessWorker]:WORKER EXIT UNEXPECTED  E_ERROR Uncaught exception 'Exception' with message 'cant not mkdir(/tmp/workerman-flappy-bird/)' in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php:35
+Stack trace:
+#0 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/Store.php(47): Lib\StoreDriver\File->__construct('gateway')
+#1 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(158): Lib\Store::instance('gateway')
+#2 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(59): BusinessWorker->checkGatewayConnections()
+#3 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/SocketWorker.php(228): BusinessWorker->onStart()
+#4 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(446): Man\Core\SocketWorker->start()
+#5 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(360): Man\Core\Master::createOneWorker('BusinessWorker')
+#6 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Cor in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php on line 35
+2015-06-26 21:23:57 Worker[BusinessWorker]:WORKER EXIT UNEXPECTED  E_ERROR Uncaught exception 'Exception' with message 'cant not mkdir(/tmp/workerman-flappy-bird/)' in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php:35
+Stack trace:
+#0 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/Store.php(47): Lib\StoreDriver\File->__construct('gateway')
+#1 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(158): Lib\Store::instance('gateway')
+#2 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(59): BusinessWorker->checkGatewayConnections()
+#3 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/SocketWorker.php(228): BusinessWorker->onStart()
+#4 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(446): Man\Core\SocketWorker->start()
+#5 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(360): Man\Core\Master::createOneWorker('BusinessWorker')
+#6 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Cor in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php on line 35
+2015-06-26 21:23:57 Worker[BusinessWorker]:WORKER EXIT UNEXPECTED  E_ERROR Uncaught exception 'Exception' with message 'cant not mkdir(/tmp/workerman-flappy-bird/)' in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php:35
+Stack trace:
+#0 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/Store.php(47): Lib\StoreDriver\File->__construct('gateway')
+#1 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(158): Lib\Store::instance('gateway')
+#2 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(59): BusinessWorker->checkGatewayConnections()
+#3 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/SocketWorker.php(228): BusinessWorker->onStart()
+#4 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(446): Man\Core\SocketWorker->start()
+#5 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(360): Man\Core\Master::createOneWorker('BusinessWorker')
+#6 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Cor in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php on line 35
+2015-06-26 21:23:57 Worker[BusinessWorker]:WORKER EXIT UNEXPECTED  E_ERROR Uncaught exception 'Exception' with message 'cant not mkdir(/tmp/workerman-flappy-bird/)' in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php:35
+Stack trace:
+#0 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/Store.php(47): Lib\StoreDriver\File->__construct('gateway')
+#1 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(158): Lib\Store::instance('gateway')
+#2 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Bootstrap/BusinessWorker.php(59): BusinessWorker->checkGatewayConnections()
+#3 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/SocketWorker.php(228): BusinessWorker->onStart()
+#4 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(446): Man\Core\SocketWorker->start()
+#5 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Core/Master.php(360): Man\Core\Master::createOneWorker('BusinessWorker')
+#6 /home/ubuntu/Desktop/workerman-flappy-bird/workerman/Cor in /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Lib/StoreDriver/File.php on line 35
+2015-06-26 21:23:57 Server:worker[4272:BusinessWorker] exit with status 65280
+2015-06-26 21:23:57 Server:worker[4275:BusinessWorker] exit with status 65280
+2015-06-26 21:23:57 Server:worker[4276:BusinessWorker] exit with status 65280
+2015-06-26 21:23:57 Server:worker[4274:BusinessWorker] exit with status 65280
+2015-06-26 21:23:57 Server:worker[4285:Gateway] exit with status 65280
+2015-06-26 21:24:20 Worker[FileMonitor]:terminal closed and reset workers fd
+2015-06-26 21:25:53 Server:Workerman is starting ...
+2015-06-26 21:25:53 Server:[33;40mWorkerman already started[0m
+2015-06-26 21:27:49 Worker[Gateway]:notify connection warning uid:1353252600 already binded socket:57 ip:127.0.0.1
+2015-06-26 21:33:00 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:33:15 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:33:17 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:34:38 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:35:02 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:35:04 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:35:08 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:35:29 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:43:06 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:43:11 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:43:12 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:43:27 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:43:53 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:44:31 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:46:33 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:46:45 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:47:26 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:48:35 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:54:24 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:55:02 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:55:09 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:56:41 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:59:02 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:59:23 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 21:59:27 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:01:26 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:01:58 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:02:11 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:02:23 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:03:59 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:04:00 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:04:12 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:04:31 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:24:19 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:24:53 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:24:57 Worker[Gateway]:notify connection warning uid:1353286900 already binded socket:465 ip:127.0.0.1
+2015-06-26 22:24:59 Worker[Gateway]:notify connection warning uid:1353286900 already binded socket:476 ip:127.0.0.1
+2015-06-26 22:26:42 Server:Workerman is starting ...
+2015-06-26 22:26:42 Server:[33;40mWorkerman already started[0m
+2015-06-26 22:27:06 Server:Workerman is shutting down
+2015-06-26 22:27:06 Server:Workerman stoped
+2015-06-26 22:27:24 Server:Workerman is starting ...
+2015-06-26 22:27:24 Server:[1A
+[KWorkerman start success ...[0m
+2015-06-26 22:29:29 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:29:33 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:29:42 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:30:27 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:31:20 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:31:37 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
+2015-06-26 22:31:38 /home/ubuntu/Desktop/workerman-flappy-bird/applications/Flappybird/Web/index.php updated and reload workers
